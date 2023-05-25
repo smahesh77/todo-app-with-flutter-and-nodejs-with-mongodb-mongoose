@@ -1,6 +1,11 @@
 const app = require('./app')
 const db = require('./config/db')
 const userModel = require('./models/userModel')
+const http = require('http')
+
+const server = http.createServer(function(req, res) {
+
+})
 
 app.get('/', (req, res) => {
     res.send("connected")
